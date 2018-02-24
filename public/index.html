@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="NewProject" content="width=device-width, initial-scale=1">
+    <title>Welcome to Firebase Hosting</title>
+
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/4.10.1/firebase-app.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/4.10.1/firebase-auth.js"></script>
+    <script defer src="/__/firebase/4.10.1/firebase-database.js"></script>
+    <script defer src="/__/firebase/4.10.1/firebase-messaging.js"></script>
+    <script defer src="/__/firebase/4.10.1/firebase-storage.js"></script>
+    <!-- initialize the SDK after all desired features are loaded -->
+    <script defer src="/__/firebase/init.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+  </head>
+  
+  <body>
+
+    <div id="home">
+      <h2>Hola!!</h2>
+      <h1>Ejemplo de base de datos en Firebase</h1>
+      <form>
+        User name:<br>
+        <input type="text" name="username" id="user-input"><br>
+      </form>
+      <p>Presione el boton</p>
+      <button id="btn-ingresar" type="Submit" onclick="addUser()">Ingresar</button>
+    </div>
+
+
+    <script src="https://www.gstatic.com/firebasejs/4.10.1/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyDrOJg9SP6w4git_ufYK3P4jgvJP-Kd5Go",
+        authDomain: "plantsalive-4d328.firebaseapp.com",
+        databaseURL: "https://plantsalive-4d328.firebaseio.com",
+        projectId: "plantsalive-4d328",
+        storageBucket: "plantsalive-4d328.appspot.com",
+        messagingSenderId: "205544640370"
+      };
+      firebase.initializeApp(config);
+    </script>
+
+  </body>
+</html>
